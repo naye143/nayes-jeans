@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Nayes Jeans · Stock y ventas</title><script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script><meta name="theme-color" content="#ffffff"><link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"><link rel="icon" type="image/png" sizes="512x512" href="icon-512.png"><link rel="shortcut icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">
+<title>Nayes Jeans · Stock y ventas</title><script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#ffffff"><link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"><link rel="icon" type="image/png" sizes="512x512" href="icon-512.png"><link rel="shortcut icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -403,7 +403,7 @@ body.enlogin>*:not(#login):not(#toast){display:none!important}
 <div id="ticket"></div>
 <script>
 {
-const APP_VER='5.1',APP_NOTAS=["Compu y celular conectados: ven lo mismo", "Funciona sin internet y sube todo cuando vuelve", "Entrada con usuario y contraseña", "Avisa cuando hay una versión nueva", "Reportes y finanzas ordenados por tema", "Modo oscuro arreglado", "Opciones con Enter en vez de comas"];
+const APP_VER='5.2',APP_NOTAS=["Compu y celular conectados: ven lo mismo", "Funciona sin internet y sube todo cuando vuelve", "Entrada con usuario y contraseña", "Avisa cuando hay una versión nueva", "Reportes y finanzas ordenados por tema", "Modo oscuro arreglado", "Opciones con Enter en vez de comas"];
 const cmpVer=(a,b)=>{const x=String(a).split('.').map(Number),y=String(b).split('.').map(Number);for(let i=0;i<Math.max(x.length,y.length);i++){const d=(x[i]||0)-(y[i]||0);if(d)return d>0?1:-1}return 0};
 const LOCAL=false,NUBE=true,PRINT=LOCAL||NUBE;
 const $=s=>document.querySelector(s);
