@@ -1,5 +1,5 @@
-/* Nayes Jeans: guarda la app en el equipo para que abra sin internet. Versión 5.7 */
-const C='nayes-5.7';
+/* Nayes Jeans: guarda la app en el equipo para que abra sin internet. Versión 5.8 */
+const C='nayes-5.8';
 const FIJOS=['./','index.html','manifest.webmanifest','icon-192.png','icon-512.png','https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js','https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js','https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(C).then(c=>Promise.all(FIJOS.map(u=>c.add(new Request(u,{cache:'reload'})).catch(()=>{})))).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x.startsWith('nayes-')&&x!==C).map(x=>caches.delete(x)))).then(()=>self.clients.claim()))});
